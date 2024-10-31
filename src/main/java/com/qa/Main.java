@@ -2,6 +2,7 @@ package com.qa;
 
 import com.qa.functional_interfaces.*;
 
+import java.time.Clock;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +15,9 @@ public class Main {
 //        exampleC();
 //        exampleD();
 //        exampleE();
+
+        challenge1();
+        challenge2();
 
     }
 
@@ -162,4 +166,31 @@ public class Main {
         System.out.println("Constructor has yet to be called");
         System.out.println(empWithName.get("Lisa"));
     }
+
+    public static void challenge1(){
+        System.out.println("##### Challenge 1 #####");
+        ArrayList<Integer> intList = new ArrayList<Integer>();
+
+        intList.add(1);
+        intList.add(2);
+        intList.add(3);
+
+        intList.replaceAll(i -> i + 1);
+        intList.forEach(i -> System.out.println(i));
+
+    }
+
+    public static void challenge2() {
+        System.out.println("##### Challenge 2 #####");
+        ArrayList<String> strList = new ArrayList<String>();
+
+        strList.add("Hello ");
+        strList.add("Hi ");
+        strList.add("Hola ");
+
+        strList.forEach(n -> System.out.println(n + "World"));
+    }
+
+
+
 }
