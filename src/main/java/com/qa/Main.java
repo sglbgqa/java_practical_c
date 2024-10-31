@@ -5,6 +5,7 @@ import com.qa.functional_interfaces.*;
 import java.time.Clock;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,6 +20,7 @@ public class Main {
         challenge1();
         challenge2();
         challenge3();
+        challenge4();
 
     }
 
@@ -201,6 +203,12 @@ public class Main {
 
         farewell.sayFarewell("Everyone");
         farewell.sayFarewell("Team");
+    }
+
+    public static void challenge4(){
+        System.out.println("##### Challenge 4 #####");
+        Optional<String> hello = Optional.of("Hellow World");
+        hello.ifPresent(n -> System.out.println(n));
     }
 
 
