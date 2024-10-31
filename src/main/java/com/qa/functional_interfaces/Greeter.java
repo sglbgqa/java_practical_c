@@ -28,5 +28,4 @@ public interface Greeter {
 
 
 // Uncomment / comment this method signature to see the annotation warning
-//    public abstract void sayFarewell(String name);
 }

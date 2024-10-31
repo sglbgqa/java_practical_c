@@ -18,6 +18,7 @@ public class Main {
 
         challenge1();
         challenge2();
+        challenge3();
 
     }
 
@@ -191,6 +192,16 @@ public class Main {
         strList.forEach(n -> System.out.println(n + "World"));
     }
 
+    public static void challenge3(){
+        System.out.println("##### Challenge 3 #####");
+
+        Farewell farewell = (String name) -> {
+            System.out.println("Goodbye " + name);
+        };
+
+        farewell.sayFarewell("Everyone");
+        farewell.sayFarewell("Team");
+    }
 
 
 }
